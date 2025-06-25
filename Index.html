@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Reports Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include SheetJS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Work Reports Generator</h1>
+    <p>Enter messages below (one per line, similar to WhatsApp format):</p>
+    <textarea id="inputMessages" rows="10" cols="50" placeholder="e.g., Pump XYZ repaired, John"></textarea>
+    <br>
+    <button onclick="generateSpreadsheet()">Generate Spreadsheet</button>
+    <div id="output"></div>
+</body>
+</html>
